@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sign In</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required><br>
+            <input type="password" id="password" placeholder="Password" required><br>
+            <button type="submit">Sign In</button>
+        </form>
+        <div id="error" style="color:red;"></div>
+        <p style="text-align: center; margin-top: 20px;">
+            Don't have an account? <a href="#" id="show-signup">Sign Up</a>
+        </p>
+    </div>
+    
+    <div class="container" id="signup-container" style="display: none;">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <input type="text" id="signup-username" placeholder="Username" required><br>
+            <input type="password" id="signup-password" placeholder="Password" required><br>
+            <button type="submit">Sign Up</button>
+        </form>
+        <div id="signup-error" style="color:red;"></div>
+        <p style="text-align: center; margin-top: 20px;">
+            Already have an account? <a href="#" id="show-login">Sign In</a>
+        </p>
+    </div>
+    
+    <script src="/static/main.js"></script>
+</body>
+</html> 

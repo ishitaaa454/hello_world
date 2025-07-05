@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="welcome">Welcome!</h2>
+        <button id="signout-btn">Sign Out</button>
+    </div>
+    <script src="/static/main.js"></script>
+    <script>
+        // Display username if stored
+        const token = localStorage.getItem('token');
+        const username = localStorage.getItem('username');
+        if (username) {
+            document.getElementById('welcome').textContent = `Welcome, ${username}!`;
+        }
+    </script>
+</body>
+</html> 
